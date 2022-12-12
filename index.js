@@ -74,3 +74,7 @@ function closeSidebar() {
   document.getElementById("sidebar-overlay").style.display = 'none';
   document.getElementById("sidebar-overlay").style.opacity = 0;
 }
+
+document.getElementById("btn-download-cv").addEventListener("click", function() {
+  alert("Sorry, my CV isn't available here.");
+});

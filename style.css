@@ -97,8 +97,9 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1230px;
   overflow: hidden;
+  padding: 0 15px;
 }
 .nav-list {
   display: flex;
@@ -140,7 +141,8 @@ body {
   z-index: -1;
 }
 aside {
-  width: 290px;
+  max-width: 290px;
+  width: 26%;
   float: left;
   text-align: center;
   box-shadow: -4px 7px 15px 1px rgb(0 0 0 / 20%);
@@ -150,7 +152,7 @@ aside {
 }
 .crt-card {
   background-color: #C0E3E7;
-  padding: 30px 20px 20px;
+  padding: 30px 0px;
 }
 .crt-avatar {
   clip-path: circle(50% at 50% 50%);
@@ -201,15 +203,25 @@ aside {
   text-transform: uppercase;
   border-radius: 35px;
   box-shadow: transparent 0 0 0;
-  transition: all .5s cubic-bezier(.23,1,.32,1) 0s;
+  transition: box-shadow .4s ease-in-out;
   display: block;
+  font-family: 'Quicksand', sans-serif;
   width: 100%;
   text-decoration: none;
   padding: 10px;
   font-size: 15px;
+  cursor: pointer;
+  letter-spacing: .08em;
+}
+.btn-default:hover {
+  box-shadow: -4px 7px 15px 1px rgb(0 0 0 / 20%);
+}
+.btn-default:active {
+  color: black;
+  background-color: #969696;
 }
 main {
-  margin-left: 330px;
+  margin-left: 28%;
 }
 section {
   background-color: white;
@@ -522,4 +534,26 @@ code {
 #footer-link:hover {
   opacity: 1;
 }
-
+@media screen and (max-width: 1000px) {
+  .crt-aside-box {
+    display: block;
+    max-width: unset;
+    position: unset;
+    float: unset;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+  }
+  .crt-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .crt-avatar {
+    margin: unset;
+  }
+  main {
+    margin-left: unset;
+  }
+}
