@@ -556,4 +556,7 @@ code {
   .nav-link {
     line-height: 30px;
   }
+  .skills-list {
+    text-align: center;
+  }
 }
