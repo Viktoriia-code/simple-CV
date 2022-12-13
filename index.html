@@ -16,24 +16,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
-        <button id="btnMenu" title="Menu"><img src="assets/icons/menu.png" alt="Top"></button>
-        <button id="btnToTop" title="Go to top"><img src="assets/icons/top.png" alt="Top"></button>
-        <div class="right-trangle"></div>
-        <div class="left-trangle"></div>
-        <div class="container" id="container">
-            <header>
+        <header>
+            <div class="container">
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
                         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                         <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                         <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                     </ul>
                 </nav>
-            </header>
-            <aside class="crt-aside-box">
-                <div class="crt-card">
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="crt-aside-box">
+                    <div class="crt-card">
                     <div class="crt-avatar"></div>
                     <div class="crt-info">
                         <h1>VIKTORIIA<br>BELOBORODOVA</h1>
@@ -60,32 +60,27 @@
                 <div class="crt-btn">
                     <button id="btn-download-cv" class="btn-default">Download resume</button>
                 </div>
-            </aside>
-            <main>
-                <section id="about">
-                    <h3 class="section-title">About me</h3>
+            </div>
+                <section id="summary" class="section">
+                    <h2 class="section-title">About me</h2>
                     <p><span class="section-main-text">Hello, I'm Viktoriia Beloborodova!</span><br>
                         I am a sertified customer-oriented specialist with 3+ years of hands-on experience on multitasking position at a big IT company that provides a vast variety of EDI solutions geared on B2B sector. 
-Currently a Software Development student at KEUDA (Finland), looking for an internship.
+                        Currently a Software Development student at KEUDA (Finland), looking for an internship.
                     </p>
                     <hr>
                     <div class="info-wrapper">
                         <div class="info-1">
                             <h4>Contacts</h4>
-                            <table>
-                                <tr>
-                                    <td class="tbl-main subtitle">ADDRESS</td>
-                                    <td>Helsinki, Finland</td>
-                                </tr>
-                                <tr>
-                                    <td class="tbl-main subtitle">Email</td>
-                                    <td>beloborodova.viktoriia@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td class="tbl-main subtitle">PHONE</td>
-                                    <td>+3456 897-32-34</td>
-                                </tr>
-                            </table>
+                            <div class="contact-wraper">
+                                <div class="tbl-main subtitle">ADDRESS</div>
+                                <div>Helsinki, Finland</div>
+                                
+                                <div class="tbl-main subtitle">Email</div>
+                                <div>beloborodova.viktoriia@gmail.com</div>
+                                
+                                <div class="tbl-main subtitle">PHONE</div>
+                                <div>+3456 897-32-34</div>
+                            </div>
                         </div>
                         <div class="info-2">
                             <h4>Languages</h4>
@@ -148,8 +143,8 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                         </div>
                     </div>
                 </section>
-                <section id="skills">
-                    <h3 class="section-title">My skills</h3>
+                <section id="skills" class="section">
+                    <h2 class="section-title">My skills</h2>
                     <div class="wrapper">
                         <ul class="skills-list">
                             <li class="skills-item">JavaScript</li>
@@ -164,14 +159,14 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                         </ul>
                     </div>
                 </section>
-                <section id="projects">
-                    <h3 class="section-title">My projects</h3>
+                <section id="projects" class="section">
+                    <h2 class="section-title">My projects</h2>
                     <div class="projects-wrapper">
                         <div class="project-item">
                             <a href="https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project8-scrumdesk/" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/projects/kanban.png" alt="" class="project-img">
                                 <div class="project-caption">
-                                    <h2>KANBAN BOARD</h2>
+                                    <h3 class="project-title">KANBAN BOARD</h3>
                                     HTML,CSS,JavaScript
                                     <div class="btn-project">View deploy</div>
                                 </div>
@@ -181,7 +176,7 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                             <a href="https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti2-arvauspeli-ENG/" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/projects/guess-game.png" alt="" class="project-img">
                                 <div class="project-caption">
-                                    <h2>Game "Guess the number"</h2>
+                                    <h3 class="project-title">Game "Guess the number"</h3>
                                     HTML,CSS,JavaScript
                                     <div class="btn-project">View deploy</div>
                                 </div>
@@ -191,7 +186,7 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                             <a href="https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Project5-Muistipeli/index.html" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/projects/memory-game.png" alt="" class="project-img">
                                 <div class="project-caption">
-                                    <h2>Memory Game</h2>
+                                    <h3 class="project-title">Memory Game</h3>
                                     HTML,CSS,JavaScript
                                     <div class="btn-project">View deploy</div>
                                 </div>
@@ -201,7 +196,7 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                             <a href="https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project7-kuvakirja/" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/projects/soundbird.png" alt="" class="project-img">
                                 <div class="project-caption">
-                                    <h2>Birds' songs</h2>
+                                    <h3 class="project-title">Birds' songs</h3>
                                     HTML,CSS,JavaScript
                                     <div class="btn-project">View deploy</div>
                                 </div>
@@ -211,7 +206,7 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                             <a href="https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Project3-Calculator/" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/projects/calc.png" alt="" class="project-img">
                                 <div class="project-caption">
-                                    <h2>Calculator</h2>
+                                    <h3 class="project-title">Calculator</h3>
                                     HTML,CSS,JavaScript
                                     <div class="btn-project">View deploy</div>
                                 </div>
@@ -221,7 +216,7 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                             <a href="https://viktoriia-code.github.io/Java_Script/3.%20projekti/" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/projects/paralax.png" alt="" class="project-img">
                                 <div class="project-caption">
-                                    <h2>Paralax gallery</h2>
+                                    <h3 class="project-title">Paralax gallery</h3>
                                     HTML,CSS,JavaScript
                                     <div class="btn-project">View deploy</div>
                                 </div>
@@ -230,8 +225,8 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                         <div class="project-item"></div>
                     </div>
                 </section>
-                <section id="experience">
-                    <h3 class="section-title">My experience</h3>
+                <section id="experience" class="section">
+                    <h2 class="section-title">My experience</h2>
                     <div class="experience-wrapper">
                         <div class="date">Sept <b>2017</b> - Oct <b>2019</b></div>
                         <div class="exp-col-2">
@@ -244,8 +239,8 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                         </div>
                     </div>
                 </section>
-                <section id="education">
-                    <h3 class="section-title">My education</h3>
+                <section id="education" class="section">
+                    <h2 class="section-title">My education</h2>
                     <div class="experience-wrapper">
                         <div class="date">Apr <b>2022</b> - <b>now</b></div>
                         <div class="exp-col-2">
@@ -288,29 +283,53 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                         </div>
                     </div>
                 </section>
-                <section id="code">
-                    <h3 class="section-title">My code</h3>
+                <section id="code" class="section">
+                    <h2 class="section-title">My code</h2>
                     <div class="code-example">
                         <code>
                             function getRandomColor() {<br>
                                 &nbsp;&nbsp;var randomColor = "#";<br>
                                 &nbsp;&nbsp;var hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A","B","C","D","E","F"];<br>
                                 &nbsp;&nbsp;for(var i = 0; i&lt;6; i++) {<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;randomColor += hexNumbers[Math.floor(Math.random()*16)];<br>
-                                &nbsp;&nbsp;};<br>
-                                &nbsp;&nbsp;document.getElementById("code").style.backgroundColor = randomColor;<br>
-                                &nbsp;&nbsp;document.getElementById("color-code").innerHTML = randomColor;<br>
-};
-                        </code>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;randomColor += hexNumbers[Math.floor(Math.random()*16)];<br>
+                                    &nbsp;&nbsp;};<br>
+                                    &nbsp;&nbsp;document.getElementById('code').style.backgroundColor = randomColor;<br>
+                                    &nbsp;&nbsp;document.getElementById('color-code').innerHTML = randomColor;<br>
+                                };
+                            </code>
+                        </div>
+                    <div class="code-info">
+                        <button class="btn-link" onclick="getRandomColor()">Try it Yourself »</button>
+                        <span id="color-message">Your random color is: <span id="color-code"></span></span>
                     </div>
-                    <button class="btn-link" onclick="getRandomColor()">Try it Yourself »</button>
-                    <span id="color-message">Your random color is: <span id="color-code"></span></span>
                 </section>
-            </main>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="copy-right">
+                        <span>© 2022 by Viktoriia Beloborodova</span>
+                        <a href="https://github.com/Viktoriia-code" target="_blank" class="footer-link" id="footer-link">
+                            <img src="assets/icons/github.png" alt="Github link">
+                        </a> 
+                    </div>
+                        <div class="rs-school">
+                            <a href="https://rs.school/js/" target="_blank">
+                                <img src="assets/img/rs_school_js.svg" alt="RS School logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <button id="btnMenu" title="Menu"><img src="assets/icons/menu.png" alt="Top"></button>
+            <button id="btnToTop" title="Go to top"><img src="assets/icons/top.png" alt="Top"></button>
+            <div class="right-trangle"></div>
+            <div class="left-trangle"></div>
             <div id="sidebar">
                 <button id="btnClose" title="Close"><img src="assets/icons/close.png" alt="Close"></button>
                 <ul class="sidebar-list">
-                    <li class="sidebar-item"><a href="#about" class="sidebar-link">About</a></li>
+                    <li class="sidebar-item"><a href="#summary" class="sidebar-link">Summary</a></li>
                     <li class="sidebar-item"><a href="#skills" class="sidebar-link">Skills</a></li>
                     <li class="sidebar-item"><a href="#projects" class="sidebar-link">Projects</a></li>
                     <li class="sidebar-item"><a href="#experience" class="sidebar-link">Experience</a></li>
@@ -318,20 +337,6 @@ Currently a Software Development student at KEUDA (Finland), looking for an inte
                 </ul>
             </div>
             <div id="sidebar-overlay"></div>
-            <footer>
-                <div class="copy-right">
-                    <span>© 2022 by Viktoriia Beloborodova</span>
-                    <a href="https://github.com/Viktoriia-code" target="_blank" id="footer-link">
-                        <img src="assets/icons/github.png" alt="Github link">
-                    </a> 
-                </div>
-                <div class="rs-school">
-                    <a href="https://rs.school/js/" target="_blank">
-                        <img src="assets/img/rs_school_js.svg" alt="">
-                    </a>
-                </div>
-            </footer>
-        </div>
-        <script src="index.js"></script>
-    </body>
-</html>
+            <script src="index.js"></script>
+        </body>
+        </html>

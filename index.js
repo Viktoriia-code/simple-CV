@@ -20,32 +20,32 @@ for (let elm of elements) {
 //START code example
 function getRandomColor()
 {
-  var randomColor = "#";
-  var hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A","B","C","D","E","F"];
+  var randomColor = '#';
+  var hexNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A','B','C','D','E','F'];
   for(var i = 0; i < 6; i++)
   {
     randomColor += hexNumbers[Math.floor(Math.random()*16)];
   }
-  document.getElementById("code").style.backgroundColor = randomColor;
-  document.getElementById("color-code").innerHTML = randomColor;
+  document.getElementById('code').style.backgroundColor = randomColor;
+  document.getElementById('color-code').innerHTML = randomColor;
 }
 //END code example
 
 //button to scroll back to top
-const btnScrollToTop = document.getElementById("btnToTop");
-const btnMenu = document.getElementById("btnMenu");
+const btnScrollToTop = document.getElementById('btnToTop');
+const btnMenu = document.getElementById('btnMenu');
 
-btnScrollToTop.addEventListener("click", function() { 
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" }); 
+btnScrollToTop.addEventListener('click', function() { 
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); 
 }); 
 
-window.addEventListener("scroll", () => { 
+window.addEventListener('scroll', () => { 
   if (window.pageYOffset > 100) { 
-    btnScrollToTop.classList.add("active");
-    btnMenu.classList.add("active");
+    btnScrollToTop.classList.add('active');
+    btnMenu.classList.add('active');
   } else { 
-    btnScrollToTop.classList.remove("active"); 
-    btnMenu.classList.remove("active");
+    btnScrollToTop.classList.remove('active'); 
+    btnMenu.classList.remove('active');
   } 
 });
 
@@ -53,28 +53,28 @@ function preventDefault(e){
   e.preventDefault();
 }
 
-btnMenu.addEventListener("click", openSidebar);
+btnMenu.addEventListener('click', openSidebar);
 
 function openSidebar() {
-  document.getElementById("sidebar").classList.add("opened");
-  document.getElementById("sidebar-overlay").style.display = 'block';
-  document.getElementById("sidebar-overlay").style.opacity = 1;
+  document.getElementById('sidebar').classList.add('opened');
+  document.getElementById('sidebar-overlay').style.display = 'block';
+  document.getElementById('sidebar-overlay').style.opacity = 1;
 }
 
-document.getElementById("sidebar-overlay").addEventListener("click", closeSidebar);
-document.getElementById("btnClose").addEventListener("click", closeSidebar);
-let sidebarLinks = document.querySelectorAll(".sidebar-link");
+document.getElementById('sidebar-overlay').addEventListener('click', closeSidebar);
+document.getElementById('btnClose').addEventListener('click', closeSidebar);
+let sidebarLinks = document.querySelectorAll('.sidebar-link');
 
 for(i=0;i<sidebarLinks.length;i++) {
-  sidebarLinks[i].addEventListener("click", closeSidebar);
+  sidebarLinks[i].addEventListener('click', closeSidebar);
 }
 
 function closeSidebar() {
-  document.getElementById("sidebar").classList.remove("opened");
-  document.getElementById("sidebar-overlay").style.display = 'none';
-  document.getElementById("sidebar-overlay").style.opacity = 0;
+  document.getElementById('sidebar').classList.remove('opened');
+  document.getElementById('sidebar-overlay').style.display = 'none';
+  document.getElementById('sidebar-overlay').style.opacity = 0;
 }
 
-document.getElementById("btn-download-cv").addEventListener("click", function() {
+document.getElementById('btn-download-cv').addEventListener('click', function() {
   alert("Sorry, my CV isn't available here.");
 });
